@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
+import AboutSection from '../components/AboutSection';
 
 export default function HomePage() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
@@ -15,6 +16,7 @@ export default function HomePage() {
         isBookingOpen={isBookingOpen} 
         setIsBookingOpen={setIsBookingOpen} 
       />
+      <AboutSection />
     </main>
   );
 }
