@@ -6,6 +6,15 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, MapPin, Menu, X, ChevronRight } from 'lucide-react';
 
+const navLinks = [
+  { label: 'Home', href: '/' },
+  { label: 'Accommodations', href: '/bungalows' },
+  { label: 'Amenities', href: '/amenities' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Contact', href: '/contact' },
+];
+
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,7 +29,7 @@ function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 font-sans">
-      <div 
+      <div
         className={`bg-[#0C3B73] text-white/90 text-xs py-2 transition-all duration-300 ${
           isScrolled ? '-translate-y-full opacity-0 absolute h-0 overflow-hidden' : 'translate-y-0 opacity-100'
         }`}
@@ -44,20 +53,20 @@ function Header() {
         </div>
       </div>
 
-      <nav 
+      <nav
         className={`transition-all duration-300 border-b ${
-          isScrolled 
-            ? 'bg-white/95 backdrop-blur-md shadow-lg border-gray-100 py-3' 
+          isScrolled
+            ? 'bg-white/95 backdrop-blur-md shadow-lg border-gray-100 py-3'
             : 'bg-gradient-to-b from-black/40 to-transparent border-white/10 py-5 text-white'
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-[#00A3C4] shadow-md group-hover:scale-105 transition-transform duration-300">
-              <Image 
-                src="/logo.png" 
-                alt="Europe Enchanted Logo" 
-                fill 
+              <Image
+                src="/logo.png"
+                alt="Europe Enchanted Logo"
+                fill
                 className="object-cover"
               />
             </div>
@@ -72,13 +81,13 @@ function Header() {
           </Link>
 
           <div className={`hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide ${isScrolled ? 'text-gray-700' : 'text-white/90'}`}>
-            {['Home', 'Accommodations', 'Amenities', 'Gallery', 'About Us', 'Contact'].map((item) => (
-              <Link 
-                key={item} 
-                href={`#${item.toLowerCase().replace(' ', '-')}`}
+            {navLinks.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
                 className="relative py-1 hover:text-[#00A3C4] transition-colors duration-300 group"
               >
-                {item}
+                {item.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#00A3C4] transition-all duration-300 group-hover:w-full" />
               </Link>
             ))}
@@ -88,7 +97,8 @@ function Header() {
             <motion.a
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              href="#booking"
+              href="https://app.inn-connect.com/book2/?p=Europe%20Enchanted%20Bungalow"
+              
               className="relative group overflow-hidden rounded-full bg-[#0C3B73] px-6 py-2.5 text-xs font-semibold uppercase tracking-widest text-white shadow-md hover:shadow-xl transition-all"
             >
               <span className="absolute inset-0 bg-gradient-to-r from-[#00A3C4] to-[#0C3B73] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -99,7 +109,7 @@ function Header() {
             </motion.a>
           </div>
 
-          <button 
+          <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className={`md:hidden p-2 rounded-lg transition-colors ${isScrolled ? 'text-[#0C3B73]' : 'text-white'}`}
             aria-label="Toggle Menu"
@@ -111,26 +121,28 @@ function Header() {
 
       <AnimatePresence>
         {mobileMenuOpen && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             className="md:hidden bg-[#0C3B73] text-white border-b border-[#00A3C4]/20 shadow-2xl"
           >
             <div className="px-6 py-6 space-y-4 flex flex-col">
-              {['Home', 'Accommodations', 'Amenities', 'Gallery', 'About Us', 'Contact'].map((item) => (
-                <Link 
-                  key={item} 
-                  href={`#${item.toLowerCase().replace(' ', '-')}`}
+              {navLinks.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className="text-base font-medium text-white/90 hover:text-[#00A3C4] transition-colors py-1"
                 >
-                  {item}
+                  {item.label}
                 </Link>
               ))}
               <div className="pt-4 border-t border-white/10 flex flex-col space-y-3">
-                <a 
-                  href="#booking" 
+                <a
+                  href="https://app.inn-connect.com/book2/?p=Europe%20Enchanted%20Bungalow"
+                                  
+
                   onClick={() => setMobileMenuOpen(false)}
                   className="w-full text-center bg-[#00A3C4] text-white py-3 rounded-full text-sm font-semibold tracking-wider uppercase"
                 >

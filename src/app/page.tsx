@@ -1,22 +1,12 @@
-'use client';
+// src/app/page.tsx
+import Hero from '@/app/components/home/Hero';
 
-import React, { useState } from 'react';
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import AboutSection from '../components/AboutSection';
-
-export default function HomePage() {
-  const [isBookingOpen, setIsBookingOpen] = useState(false);
-
+export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
-      {/* @ts-expect-error Bypass cached dynamic prop mismatch */}
-      <Header onOpenBooking={() => setIsBookingOpen(true)} />
-      <Hero 
-        isBookingOpen={isBookingOpen} 
-        setIsBookingOpen={setIsBookingOpen} 
-      />
-      <AboutSection />
+    <main>
+      <Hero />
+      {/* More sections will stack here as we build them:
+          IntroStrip, FeaturedBungalows, AmenitiesStrip, etc. */}
     </main>
   );
 }
