@@ -1,9 +1,11 @@
 // src/app/components/home/Hero.tsx
+
 'use client';
 
 import { useState, useRef } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import { X } from 'lucide-react';
+import BookingModal from '@/app/components/BookingModal';
 
 const headline = "Europe Enchanted Bungalows".split(' ');
 
@@ -120,7 +122,7 @@ function Hero() {
       </motion.div>
 
       {/* Inn-Connect Reservation Modal */}
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {isBookingOpen && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 md:p-10">
             <motion.div
@@ -160,7 +162,8 @@ function Hero() {
             </motion.div>
           </div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
+      <BookingModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
     </section>
   );
 }
