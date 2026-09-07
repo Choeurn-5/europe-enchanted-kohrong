@@ -7,8 +7,17 @@ import type { GetBungalowsResponse } from '@/lib/wordpress/types';
 import FeaturedBungalowsHeader from '@/app/components/home/FeaturedBungalowsHeader';
 
 export default async function FeaturedBungalows() {
-  const data = await wpClient.request<GetBungalowsResponse>(GET_BUNGALOWS);
-  const featured = data.bungalows.nodes.slice(0, 3);
+  let featured: GetBungalowsResponse['bungalows']['nodes'] = [];
+  try {
+    const data = await wpClient.request<GetBungalowsResponse>(GET_BUNGALOWS);
+    featured = data.bungalows?.nodes?.slice(0, 3) ?? [];
+  } catch (error) {
+    console.error('Failed to fetch featured bungalows:', error);
+  }
+
+  if (featured.length === 0) {
+    return null;
+  }
 
   return (
     <section className="bg-[#F9FAFB] py-24">

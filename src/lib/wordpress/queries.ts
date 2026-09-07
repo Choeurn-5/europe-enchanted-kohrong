@@ -75,3 +75,18 @@ export const GET_BUNGALOW_BY_SLUG = gql`
     }
   }
 `
+export const GET_GLOBAL_AMENITIES = gql` 
+  query GetGlobalAmenities {
+    globalAmenities {
+      nodes {
+        id
+        title
+        amenityFields {
+          iconName
+          subtitle
+        }
+      }
+    }
+  }
+`
+

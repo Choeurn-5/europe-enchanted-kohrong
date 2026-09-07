@@ -43,3 +43,18 @@ export interface GetBungalowsResponse {
     nodes: Bungalow[]
   }
 }
+
+export interface GlobalAmenity {
+  id: string
+  title: string
+  amenityFields: {
+    iconName: string
+    subtitle: string
+  }
+}
+
+export interface GetGlobalAmenitiesResponse {
+  globalAmenities: {
+    nodes: GlobalAmenity[]
+  }
+}
