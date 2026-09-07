@@ -90,3 +90,26 @@ export const GET_GLOBAL_AMENITIES = gql`
   }
 `
 
+export const GET_GALLERY_ITEMS = gql`
+  query GetGalleryItems {
+    galleryItems(first: 100) {
+      nodes {
+        id
+        title
+        featuredImage {
+          node {
+            sourceUrl
+            altText
+          }
+        }
+        galleryFields {
+          category
+          span
+          caption
+        }
+      }
+    }
+  }
+`
+
+

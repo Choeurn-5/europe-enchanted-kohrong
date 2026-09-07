@@ -58,3 +58,25 @@ export interface GetGlobalAmenitiesResponse {
     nodes: GlobalAmenity[]
   }
 }
+
+export interface GalleryItemNode {
+  id: string
+  title: string
+  featuredImage: {
+    node: {
+      sourceUrl: string
+      altText: string
+    }
+  } | null
+  galleryFields?: {
+    category?: 'bungalows' | 'beach' | 'dining' | 'activities' | string | null
+    span?: 'tall' | 'wide' | 'normal' | string | null
+    caption?: string | null
+  } | null
+}
+
+export interface GetGalleryItemsResponse {
+  galleryItems: {
+    nodes: GalleryItemNode[]
+  }
+}
