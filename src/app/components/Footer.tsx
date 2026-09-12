@@ -127,13 +127,13 @@ export default function Footer() {
             </Link>
 
             <p className="text-sm text-slate-300/80 leading-relaxed max-w-sm">
-              An intimate sanctuary nestled directly along Koh Toch Beach. Experience the pure tranquility of Koh Rong with rustic island charm, warm Cambodian hospitality, and stunning sunsets over turquoise waters.
+              An intimate sanctuary nestled directly along Europe Enchanted Bungalow. Experience the pure tranquility of Koh Rong with rustic island charm, warm Cambodian hospitality, and stunning sunsets over turquoise waters.
             </p>
 
             {/* Social Icons */}
             <div className="flex items-center gap-3 pt-1">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/europeenchanted/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -144,7 +144,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/europeenchantedbungalow/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -155,7 +155,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://wa.me/85592748899"
+                href="https://wa.me/+85592748899"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
@@ -254,7 +254,7 @@ export default function Footer() {
                 <div>
                   <span className="block text-[11px] uppercase tracking-wider text-slate-400 font-medium">Location</span>
                   <span className="text-slate-200 text-xs sm:text-sm leading-snug">
-                    Koh Toch Beach, Koh Rong Island, Sihanoukville, Cambodia
+                    Europe Enchanted Bungalow, Koh Rong Island, Sihanoukville, Cambodia
                   </span>
                 </div>
               </li>

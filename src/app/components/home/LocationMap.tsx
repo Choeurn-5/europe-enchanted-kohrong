@@ -40,7 +40,7 @@ function LocationMap() {
           >
             <iframe
               title="Europe Enchanted Bungalows location on Koh Rong"
-              src="https://www.google.com/maps?q=Koh+Toch+Beach,+Koh+Rong,+Cambodia&output=embed"
+              src="https://www.google.com/maps?q=Europe+Enchanted+Bungalow,+Koh+Rong,+Cambodia&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -59,7 +59,7 @@ function LocationMap() {
             className="lg:col-span-2"
           >
             <p className="text-gray-500 mb-8 leading-relaxed">
-              Koh Toch Beach, Koh Rong, Cambodia — a peaceful island reachable in
+              Europe Enchanted Bungalow, Koh Rong, Cambodia a peaceful island reachable in
               just a few easy steps.
             </p>
 

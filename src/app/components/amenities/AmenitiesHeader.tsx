@@ -1,52 +1,175 @@
 'use client';
 
-import Image from 'next/image';
 import { motion, useReducedMotion } from 'framer-motion';
+import { useRef } from 'react';
 
 export default function AmenitiesHeader() {
   const shouldReduceMotion = useReducedMotion();
+  const sectionRef = useRef<HTMLElement>(null);
 
   return (
-    <section className="relative overflow-hidden pt-24">
-      {/* Background image with dark overlay */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/amenities-hero.jpg"
-          alt="Resort amenities at Europe Enchanted Koh Rong"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
+    <section
+      ref={sectionRef}
+      className="relative w-full min-h-screen overflow-hidden"
+    >
+      {/* =========================================================
+          VIDEO BACKGROUND
+          ========================================================= */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <iframe
+          className="
+            absolute
+            top-1/2
+            left-1/2
+            w-[177.77vh]
+            min-w-full
+            h-[56.25vw]
+            min-h-full
+            -translate-x-1/2
+            -translate-y-1/2
+            pointer-events-none
+          "
+          src="https://www.youtube.com/embed/RjGYlmhO6Rw?autoplay=1&mute=1&loop=1&playlist=RjGYlmhO6Rw&controls=0&showinfo=0&rel=0&enablejsapi=1&modestbranding=1&playsinline=1"
+          title="Europe Enchanted Resort Amenities"
+          allow="autoplay; encrypted-media"
+          frameBorder="0"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#062B55]/80 via-[#062B55]/60 to-[#f8f9fc]" />
+
+        {/* =======================================================
+            VIDEO OVERLAY
+            ======================================================= */}
+
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/20" />
+
+        {/* Blue gradient overlay */}
+        <div
+          className="
+            absolute
+            inset-0
+            bg-gradient-to-b
+            from-[#062B55]/80
+            via-[#062B55]/45
+            to-[#f8f9fc]
+          "
+        />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-6 pt-20 pb-32 text-center">
+      {/* =========================================================
+          CONTENT
+          ========================================================= */}
+      <div
+        className="
+          relative
+          z-10
+          flex
+          min-h-screen
+          items-center
+          justify-center
+          px-6
+        "
+      >
         <motion.div
-          initial={shouldReduceMotion ? false : { opacity: 0, y: 28 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={shouldReduceMotion ? { duration: 0 } : { duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          initial={
+            shouldReduceMotion
+              ? false
+              : {
+                  opacity: 0,
+                  y: 28,
+                }
+          }
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={
+            shouldReduceMotion
+              ? {
+                  duration: 0,
+                }
+              : {
+                  duration: 0.8,
+                  ease: [0.22, 1, 0.36, 1],
+                }
+          }
+          className="max-w-4xl mx-auto text-center"
         >
-          {/* Eyebrow */}
+          {/* =====================================================
+              EYEBROW
+              ===================================================== */}
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="h-px w-10 bg-[#55D8E7]" />
-            <span className="text-[#55D8E7] text-xs font-bold tracking-[0.35em] uppercase">
+
+            <span
+              className="
+                text-[#55D8E7]
+                text-xs
+                font-bold
+                tracking-[0.35em]
+                uppercase
+              "
+            >
               What&apos;s Included
             </span>
+
             <span className="h-px w-10 bg-[#55D8E7]" />
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight mb-5">
+          {/* =====================================================
+              TITLE
+              ===================================================== */}
+          <h1
+            className="
+              text-5xl
+              md:text-6xl
+              lg:text-7xl
+              font-bold
+              text-white
+              leading-tight
+              mb-5
+            "
+          >
             Resort Amenities
           </h1>
 
-          <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            From sunrise swims to candlelit dinners and island adventures — every detail is here to make your stay feel effortless and extraordinary.
+          {/* =====================================================
+              DESCRIPTION
+              ===================================================== */}
+          <p
+            className="
+              text-white/80
+              text-lg
+              md:text-xl
+              max-w-2xl
+              mx-auto
+              leading-relaxed
+            "
+          >
+            From sunrise swims to candlelit dinners and island adventures —
+            every detail is here to make your stay feel effortless and
+            extraordinary.
           </p>
         </motion.div>
       </div>
+
+      {/* =========================================================
+          OPTIONAL BOTTOM FADE
+          Helps transition smoothly into the next section
+          ========================================================= */}
+      <div
+        className="
+          absolute
+          bottom-0
+          left-0
+          right-0
+          h-24
+          bg-gradient-to-t
+          from-[#f8f9fc]
+          to-transparent
+          z-10
+          pointer-events-none
+        "
+      />
     </section>
   );
 }
-

@@ -11,7 +11,7 @@ export default function AboutExperience() {
       num: '01',
       icon: Ship,
       title: 'Scenic Speedboat Transfer',
-      desc: 'Your escape starts with a 45-minute speedboat ride across the Gulf of Thailand, greeted by our team upon arrival at Koh Toch pier.',
+      desc: 'Your escape starts with a 45-minute speedboat ride across the Gulf of Cambodian, greeted by our team upon arrival at Europe Enchanted Bunglow & Resort pier.',
     },
     {
       num: '02',

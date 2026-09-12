@@ -8,7 +8,7 @@ export default function AboutStory() {
   const shouldReduceMotion = useReducedMotion();
 
   const storyHighlights = [
-    'Private beachfront setting nestled along Koh Toch Beach',
+    'Private beachfront setting nestled along Europe Enchanted Bunglow & Resort',
     'Handcrafted wooden bungalows built in harmony with nature',
     'Locally sourced organic ingredients and fresh Gulf seafood',
     'Dedicated team providing authentic, attentive Khmer hospitality',
@@ -28,7 +28,7 @@ export default function AboutStory() {
           >
             <div className="relative h-[420px] sm:h-[500px] rounded-3xl overflow-hidden shadow-2xl shadow-[#0C3B73]/15 border border-white bg-slate-900">
               <Image
-                src="/intro-bungalow.jpg"
+                src="/IMG_1396.jpg"
                 alt="Europe Enchanted Koh Rong resort grounds"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -43,7 +43,7 @@ export default function AboutStory() {
                   <span>Koh Rong Island</span>
                 </div>
                 <p className="font-serif text-lg font-bold">
-                  Where Island Serenity Meets Pure Hospitality
+                  Europe Enchanted Bungalows
                 </p>
               </div>
             </div>
@@ -76,7 +76,7 @@ export default function AboutStory() {
 
             <div className="space-y-4 text-gray-600 text-sm sm:text-base leading-relaxed">
               <p>
-                Nestled on the serene stretch of Koh Toch Beach, <strong>Europe Enchanted Bungalows</strong> was created to offer travelers an authentic island escape without sacrificing comfort and warmth.
+                Nestled on the serene stretch of Europe Enchanted Bunglow & Resort Beach, <strong>Europe Enchanted Bungalows</strong> was created to offer travelers an authentic island escape without sacrificing comfort and warmth.
               </p>
               <p>
                 Our philosophy centers around simple elegance: waking up to gentle sea breezes, walking barefoot on powdery white sand, and letting the natural rhythm of Koh Rong wash away everyday stress.

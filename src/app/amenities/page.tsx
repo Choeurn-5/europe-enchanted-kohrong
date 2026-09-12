@@ -18,14 +18,14 @@ export default async function AmenitiesPage() {
       <AmenitiesHeader />
 
       <AmenitySection
-        eyebrow="Leisure"
-        heading="Infinity Pool"
-        description="Relax by our stunning infinity pool overlooking the Gulf of Thailand. With comfortable loungers, towel service, and a poolside bar serving tropical cocktails and fresh juices, it's the perfect spot to unwind after a day of island exploration."
+        eyebrow="House"
+        heading="House wood"
+        description="Relax by our stunning House Wood. With comfortable loungers, towel service, and a poolside bar serving tropical cocktails and fresh juices, it's the perfect spot to unwind after a day of island exploration."
         details={[
           { label: 'Hours', value: '7:00 AM – 9:00 PM' },
-          { label: 'Service', value: 'Poolside food & drinks' },
+          { label: 'Service', value: 'food & drinks' },
         ]}
-        image="/amenities-pool.jpg"
+        image="/IMG_1338.jpg"
         imageAlt="Infinity pool at Europe Enchanted Koh Rong"
         reverse={false}
         bg="white"
@@ -40,21 +40,21 @@ export default async function AmenitiesPage() {
           { label: 'Lunch', value: '12:00 PM – 3:00 PM' },
           { label: 'Dinner', value: '6:00 PM – 10:00 PM' },
         ]}
-        image="/amenities-dining.jpg"
+        image="/image2.jpg"
         imageAlt="Restaurant and Bar at Europe Enchanted Koh Rong"
         reverse={true}
         bg="soft"
       />
 
       <AmenitySection
-        eyebrow="Wellness"
-        heading="Spa & Wellness"
-        description="Rejuvenate your body and mind with our signature spa treatments. Combining traditional Cambodian healing techniques with natural aromatherapy, our skilled therapists will help you find deep relaxation in our tranquil wellness pavilions."
+        eyebrow="Bungalow"
+        heading="Bungalow Relax"
+        description="Rejuvenate your body and mind treatments. Combining traditional Cambodian healing techniques with natural aromatherapy, our skilled therapists will help you find deep relaxation in our tranquil wellness pavilions."
         details={[
-          { label: 'Treatments', value: 'Massages, Facials, Scrubs' },
-          { label: 'Booking', value: 'Advance reservation required' },
+          // { label: 'Treatments', value: 'Massages, Facials, Scrubs' },
+          // { label: 'Booking', value: 'Advance reservation required' },
         ]}
-        image="/amenities-spa.jpg"
+        image="/image3.jpg"
         imageAlt="Spa and wellness treatments"
         reverse={false}
         bg="white"
@@ -68,21 +68,21 @@ export default async function AmenitiesPage() {
           { label: 'Options', value: 'Snorkeling, Kayaking, Hiking' },
           { label: 'Duration', value: 'Half-day and Full-day trips' },
         ]}
-        image="/amenities-tours.jpg"
+        image="/image6.jpg"
         imageAlt="Island tours and activities"
         reverse={true}
         bg="soft"
       />
 
       <AmenitySection
-        eyebrow="Connectivity"
-        heading="Complimentary WiFi"
+        eyebrow="Room"
+        heading="Interior Room"
         description="Stay connected even in paradise. We offer high-speed, complimentary Wi-Fi throughout the resort, including in all bungalows, at the restaurant, and by the pool, ensuring you can share your magical moments or catch up on emails if needed."
         details={[
           { label: 'Coverage', value: 'Entire resort property' },
           { label: 'Speed', value: 'High-speed Starlink internet' },
         ]}
-        image="/amenities-wifi.jpg"
+        image="/image4.jpg"
         imageAlt="Fast Wi-Fi in the resort"
         reverse={false}
         bg="white"
@@ -96,7 +96,7 @@ export default async function AmenitiesPage() {
           { label: 'Route', value: 'Sihanoukville to Resort' },
           { label: 'Duration', value: 'Approx. 45 minutes' },
         ]}
-        image="/amenities-boat.jpg"
+        image="/image5.jpg"
         imageAlt="Speedboat transfer to Koh Rong"
         reverse={true}
         bg="soft"

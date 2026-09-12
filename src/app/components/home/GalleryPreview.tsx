@@ -6,14 +6,14 @@ import { AnimatePresence, motion, useReducedMotion, Variants } from 'framer-moti
 import { ChevronLeft, ChevronRight, Expand, X } from 'lucide-react';
 
 const galleryImages = [
-  { src: '/gallery-1.jpg', alt: 'Bungalow exterior at sunset', tall: true },
-  { src: '/gallery-2.jpg', alt: 'Private beach view' },
-  { src: '/gallery-3.jpg', alt: 'Bungalow interior' },
-  { src: '/gallery-4.jpg', alt: 'Resort pool', tall: true },
-  { src: '/gallery-5.jpg', alt: 'Island tour boat' },
-  { src: '/gallery-6.jpg', alt: 'Dinner by the water' },
-  { src: '/gallery-7.jpg', alt: 'Garden pathway' },
-  { src: '/gallery-8.jpg', alt: 'Ocean horizon' },
+  { src: '/IMG_1393.jpg', alt: '', tall: true },
+  { src: '/IMG_1378.jpg', alt: '' },
+  { src: '/IMG_1360.jpg', alt: '' },
+  { src: '/IMG_1349.jpg', alt: '', tall: true },
+  { src: '/IMG_1328.jpg', alt: '' },
+  { src: '/IMG_1325.jpg', alt: '' },
+  { src: '/IMG_1381.jpg', alt: '' },
+  { src: '/IMG_1390.jpg', alt: '' },
 ];
 
 const container = {
