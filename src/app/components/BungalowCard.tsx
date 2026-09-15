@@ -15,7 +15,7 @@ const amenityIcons: Record<string, string> = {
 
 export default function BungalowCard({ bungalow }: { bungalow: Bungalow }) {
   const { title, slug, featuredImage, bungalowFields } = bungalow
-  const { subtitle, pricePerNight, maxGuests, sizeSqm, bedType, amenities, bookingUrl, shortDescription } =
+  const { subtitle, maxGuests, sizeSqm, bedType, amenities, bookingUrl, shortDescription } =
     bungalowFields
 
   const imageUrl =
@@ -43,14 +43,6 @@ export default function BungalowCard({ bungalow }: { bungalow: Bungalow }) {
 
         {/* Dark gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-
-        {/* Price badge */}
-        {pricePerNight && (
-          <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-2xl px-3 py-1.5 shadow-lg flex items-baseline gap-1">
-            <span className="text-[#0C3B73] text-lg font-black">${pricePerNight}</span>
-            <span className="text-gray-400 text-[10px] font-medium">/night</span>
-          </div>
-        )}
 
         {/* Amenity pills */}
         {topAmenities.length > 0 && (

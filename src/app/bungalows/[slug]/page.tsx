@@ -97,7 +97,6 @@ export default async function BungalowDetailPage({
   const {
     subtitle,
     description,
-    pricePerNight,
     maxGuests,
     bedType,
     sizeSqm,
@@ -234,19 +233,12 @@ export default async function BungalowDetailPage({
           {/* Right: Sticky booking card */}
           <div className="lg:col-span-1">
             <div className="sticky top-28 bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
-              {/* Price header */}
-              <div className="bg-gradient-to-br from-[#0C3B73] to-[#00A3C4] px-6 py-8 text-white">
-                {pricePerNight ? (
-                  <>
-                    <p className="text-sm font-medium text-white/70 mb-1">Starting from</p>
-                    <div className="flex items-baseline gap-1">
-                      <span className="text-4xl font-black">${pricePerNight}</span>
-                      <span className="text-white/70 text-sm">/ night</span>
-                    </div>
-                  </>
-                ) : (
-                  <p className="text-lg font-semibold">Contact us for pricing</p>
-                )}
+              {/* Card header */}
+              <div className="bg-gradient-to-br from-[#0C3B73] to-[#00A3C4] px-6 py-6 text-white">
+                <h3 className="text-xl font-serif font-bold mb-1">Reservation</h3>
+                <p className="text-white/80 text-xs font-light tracking-wide">
+                  Check availability &amp; rates online
+                </p>
               </div>
 
               {/* Booking content */}
