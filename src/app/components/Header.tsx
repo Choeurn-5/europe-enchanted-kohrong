@@ -67,6 +67,7 @@ function Header() {
                 src="/images/common/logo.png"
                 alt="Europe Enchanted Logo"
                 fill
+                sizes="48px"
                 className="object-cover"
               />
             </div>
