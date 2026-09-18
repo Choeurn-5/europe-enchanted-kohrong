@@ -6,6 +6,7 @@ import BungalowsGrid from '@/app/components/BungalowsGrid'
 import type { GetBungalowsResponse } from '@/lib/wordpress/types'
 
 import BungalowsHero from '@/app/components/bungalows/BungalowsHero'
+import BungalowRoomGallery from '@/app/components/bungalows/BungalowRoomGallery'
 import PropertyOverview from '@/app/components/bungalows/PropertyOverview'
 
 export const revalidate = 3600
@@ -58,9 +59,10 @@ export default async function BungalowsPage() {
         </svg>
       </div>
 
-      {/* Cards grid & Property Highlights */}
+      {/* Cards grid, Visual Room Gallery & Property Highlights */}
       <section className="max-w-7xl mx-auto px-4 pt-8 pb-24">
         <BungalowsGrid bungalows={bungalows} />
+        <BungalowRoomGallery bungalows={bungalows} />
         <PropertyOverview />
       </section>
     </main>

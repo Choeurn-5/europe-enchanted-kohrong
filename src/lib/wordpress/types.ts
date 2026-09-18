@@ -21,6 +21,26 @@ export interface Bungalow {
         sourceUrl: string
       }
     } | null
+    galleryImage2?: {
+      node: {
+        sourceUrl: string
+      }
+    } | null
+    galleryImage3?: {
+      node: {
+        sourceUrl: string
+      }
+    } | null
+    galleryImage4?: {
+      node: {
+        sourceUrl: string
+      }
+    } | null
+    galleryImage5?: {
+      node: {
+        sourceUrl: string
+      }
+    } | null
     amenities: string[] | null
     bookingUrl: string | null
   }

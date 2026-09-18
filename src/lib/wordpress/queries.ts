@@ -26,6 +26,26 @@ export const GET_BUNGALOWS = gql`
               sourceUrl
             }
           }
+          galleryImage2 {
+            node {
+              sourceUrl
+            }
+          }
+          galleryImage3 {
+            node {
+              sourceUrl
+            }
+          }
+          galleryImage4 {
+            node {
+              sourceUrl
+            }
+          }
+          galleryImage5 {
+            node {
+              sourceUrl
+            }
+          }
           amenities
           bookingUrl
         }
@@ -111,5 +131,3 @@ export const GET_GALLERY_ITEMS = gql`
     }
   }
 `
-
-
