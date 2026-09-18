@@ -12,7 +12,7 @@ const moments = [
     title: 'Wake to the Sound of Waves',
     description:
       'Start the day with fresh coffee on your private balcony as the island slowly comes alive.',
-    image: '/images/home/IMG_1394.jpg',
+    image: '/images/home/morning.jpg',
   },
   {
     label: 'Afternoon',
@@ -20,7 +20,7 @@ const moments = [
     title: 'Explore Beyond the Shore',
     description:
       'Snorkel over coral reefs, hike the jungle trails, or simply drift by the ocean with a book.',
-    image: '/images/home/IMG_1392.jpg',
+    image: '/images/home/afternoon.jpg',
   },
   {
     label: 'Evening',
@@ -28,7 +28,7 @@ const moments = [
     title: 'Sunset, Slowed Down',
     description:
       'Watch the sky turn gold over the bay, then unwind over a fresh seafood dinner by the water.',
-    image: '/images/home/image1.jpg',
+    image: '/images/home/evening.jpg',
   },
 ];
 
