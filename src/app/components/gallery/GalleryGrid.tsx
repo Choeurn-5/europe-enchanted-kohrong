@@ -25,7 +25,7 @@ export interface GalleryItem {
 const defaultGalleryItems: GalleryItem[] = [
   {
     id: 'g1',
-    src: '/IMG_1390.jpg',
+    src: '/images/gallery/IMG_1390.jpg',
     alt: 'Beachfront wooden bungalow at Europe Enchanted',
     title: 'Beachfront Wooden Sanctuary',
     category: 'bungalows',
@@ -34,7 +34,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
   {
     id: 'g2',
-    src: '/image8.jpg',
+    src: '/images/gallery/image8.jpg',
     alt: '',
     title: '',
     category: 'beach',
@@ -43,7 +43,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
   {
     id: 'g2',
-    src: '/image9.jpg',
+    src: '/images/gallery/image9.jpg',
     alt: '',
     title: '',
     category: 'beach',
@@ -52,7 +52,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
     {
     id: 'g2',
-    src: '/image10.jpg',
+    src: '/images/gallery/image10.jpg',
     alt: '',
     title: '',
     category: 'beach',
@@ -61,7 +61,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
     {
     id: 'g2',
-    src: '/image11.jpg',
+    src: '/images/gallery/image11.jpg',
     alt: '',
     title: '',
     category: 'beach',
@@ -70,7 +70,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
     {
     id: 'g2',
-    src: '/image12.jpg',
+    src: '/images/gallery/image12.jpg',
     alt: '',
     title: '',
     category: 'beach',
@@ -79,7 +79,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
     {
     id: 'g2',
-    src: '/image16.jpg',
+    src: '/images/gallery/image16.jpg',
     alt: '',
     title: '',
     category: 'beach',
@@ -88,7 +88,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
     {
     id: 'g2',
-    src: '/image15.jpg',
+    src: '/images/gallery/image15.jpg',
     alt: '',
     title: '',
     category: 'beach',
@@ -97,7 +97,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
     {
     id: 'g2',
-    src: '/image14.jpg',
+    src: '/images/gallery/image14.jpg',
     alt: '',
     title: '',
     category: 'beach',
@@ -106,7 +106,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
   {
     id: 'g3',
-    src: '/IMG_1396.jpg',
+    src: '/images/gallery/IMG_1396.jpg',
     alt: 'Bungalow veranda with sea views',
     title: 'Private Balcony with Sea Breeze',
     category: 'bungalows',
@@ -115,7 +115,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
   {
     id: 'g4',
-    src: '/image17.jpg',
+    src: '/images/gallery/image17.jpg',
     alt: 'Restauant',
     title: 'Restauant view with the ocean',
     category: 'dining',
@@ -124,7 +124,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
     {
     id: 'g4',
-    src: '/image18.jpg',
+    src: '/images/gallery/image18.jpg',
     alt: '',
     title: 'ASIAN FOOD',
     category: 'dining',
@@ -133,7 +133,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
     {
     id: 'g4',
-    src: '/image19.jpg',
+    src: '/images/gallery/image19.jpg',
     alt: '',
     title: 'EUROPEAN FOOD',
     category: 'dining',
@@ -142,7 +142,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
     {
     id: 'g4',
-    src: '/image20.jpg',
+    src: '/images/gallery/image20.jpg',
     alt: '',
     title: 'ASIAN FOOD',
     category: 'dining',
@@ -150,7 +150,7 @@ const defaultGalleryItems: GalleryItem[] = [
     span: 'normal',
   },  {
     id: 'g4',
-    src: '/image21.jpg',
+    src: '/images/gallery/image21.jpg',
     alt: '',
     title: 'KHMER FOOD',
     category: 'dining',
@@ -159,7 +159,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
     {
     id: 'g4',
-    src: '/image22.jpg',
+    src: '/images/gallery/image22.jpg',
     alt: '',
     title: 'FRANCE FOOD',
     category: 'dining',
@@ -168,7 +168,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
   {
     id: 'g4',
-    src: '/image23.jpg',
+    src: '/images/gallery/image23.jpg',
     alt: '',
     title: 'MEXICO FOOD',
     category: 'dining',
@@ -177,7 +177,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
     {
     id: 'g4',
-    src: '/image24.jpg',
+    src: '/images/gallery/image24.jpg',
     alt: '',
     title: 'KHMER FOOD',
     category: 'dining',
@@ -186,7 +186,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
     {
     id: 'g4',
-    src: '/image25.jpg',
+    src: '/images/gallery/image25.jpg',
     alt: '',
     title: 'SEA FOOD',
     category: 'dining',
@@ -195,7 +195,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
     {
     id: 'g4',
-    src: '/image26.jpg',
+    src: '/images/gallery/image26.jpg',
     alt: '',
     title: 'MORNING FOOD',
     category: 'dining',
@@ -204,7 +204,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
     {
     id: 'g4',
-    src: '/image27.jpg',
+    src: '/images/gallery/image27.jpg',
     alt: '',
     title: 'AFTERNOON FOOD',
     category: 'dining',
@@ -213,7 +213,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
     {
     id: 'g4',
-    src: '/image28.jpg',
+    src: '/images/gallery/image28.jpg',
     alt: '',
     title: 'EVEVING FOOD',
     category: 'dining',
@@ -222,7 +222,7 @@ const defaultGalleryItems: GalleryItem[] = [
   },
   {
     id: 'g5',
-    src: '/image5.jpg',
+    src: '/images/gallery/image5.jpg',
     alt: 'Island tour boat on turquoise waters',
     title: 'Island Boat Cruise',
     category: 'activities',
@@ -232,7 +232,7 @@ const defaultGalleryItems: GalleryItem[] = [
 
   {
     id: 'g9',
-    src: '/image7.jpg',
+    src: '/images/gallery/image7.jpg',
     alt: 'Afternoon with the sea view',
     title: 'Afternoon Beach',
     category: 'activities',
@@ -242,7 +242,7 @@ const defaultGalleryItems: GalleryItem[] = [
 
   {
     id: 'g9',
-    src: '/image29.jpg',
+    src: '/images/gallery/image29.jpg',
     alt: 'Evening beach fire under the stars',
     title: 'Nightly Beach',
     category: 'activities',

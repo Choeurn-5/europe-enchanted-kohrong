@@ -18,14 +18,14 @@ export const metadata: Metadata = {
     description:
       'Browse photos of Europe Enchanted Resort on Koh Rong Island, Cambodia. Beachfront wooden bungalows, turquoise waters, and tropical serenity.',
     url: 'https://europeenchantedkohrong.com/gallery',
-    images: ['/images/resort-4.jpg'],
+    images: ['/images/common/resort-4.jpg'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Resort Photo Gallery | Europe Enchanted Koh Rong',
     description:
       'Browse photos of Europe Enchanted Resort on Koh Rong Island, Cambodia.',
-    images: ['/images/resort-4.jpg'],
+    images: ['/images/common/resort-4.jpg'],
   },
 };
 

@@ -86,7 +86,7 @@ function IntroStrip() {
               className="absolute inset-[-30px]"
             >
               <Image
-                src="/IMG_1396.jpg"
+                src="/images/home/IMG_1396.jpg"
                 alt="Europe Enchanted Bungalows, Koh Rong"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"

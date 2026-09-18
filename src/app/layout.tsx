@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     description: "A private island escape on Koh Rong — luxury bungalows, beachfront tranquility, and untouched nature.",
     images: [
       {
-        url: "/images/resort-4.jpg",
+        url: "/images/common/resort-4.jpg",
         width: 1200,
         height: 630,
         alt: "Europe Enchanted Bungalows on Koh Rong",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Europe Enchanted Bungalows | Koh Rong, Cambodia",
     description: "A private island escape on Koh Rong — luxury bungalows, beachfront tranquility, and untouched nature.",
-    images: ["/images/resort-4.jpg"],
+    images: ["/images/common/resort-4.jpg"],
   },
   robots: {
     index: true,
@@ -81,7 +81,15 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/images/common/logo.png', sizes: '32x32', type: 'image/png' },
+      { url: '/images/common/logo.png', sizes: '192x192', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: [
+      { url: '/images/common/logo.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
 };
 

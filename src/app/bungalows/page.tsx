@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Our Bungalows | Europe Enchanted Koh Rong',
     description: 'Explore our beachfront and garden bungalows on Koh Toch Beach, Koh Rong.',
-    images: ['/images/resort-4.jpg'],
+    images: ['/images/common/resort-4.jpg'],
   },
 }
 

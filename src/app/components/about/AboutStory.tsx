@@ -28,7 +28,7 @@ export default function AboutStory() {
           >
             <div className="relative h-[420px] sm:h-[500px] rounded-3xl overflow-hidden shadow-2xl shadow-[#0C3B73]/15 border border-white bg-slate-900">
               <Image
-                src="/IMG_1396.jpg"
+                src="/images/about/IMG_1396.jpg"
                 alt="Europe Enchanted Koh Rong resort grounds"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"

@@ -25,7 +25,7 @@ export default async function AmenitiesPage() {
           { label: 'Hours', value: '7:00 AM – 9:00 PM' },
           { label: 'Service', value: 'food & drinks' },
         ]}
-        image="/IMG_1338.jpg"
+        image="/images/amenities/IMG_1338.jpg"
         imageAlt="Infinity pool at Europe Enchanted Koh Rong"
         reverse={false}
         bg="white"
@@ -40,7 +40,7 @@ export default async function AmenitiesPage() {
           { label: 'Lunch', value: '12:00 PM – 3:00 PM' },
           { label: 'Dinner', value: '6:00 PM – 10:00 PM' },
         ]}
-        image="/image2.jpg"
+        image="/images/amenities/image2.jpg"
         imageAlt="Restaurant and Bar at Europe Enchanted Koh Rong"
         reverse={true}
         bg="soft"
@@ -54,7 +54,7 @@ export default async function AmenitiesPage() {
           // { label: 'Treatments', value: 'Massages, Facials, Scrubs' },
           // { label: 'Booking', value: 'Advance reservation required' },
         ]}
-        image="/image3.jpg"
+        image="/images/amenities/image3.jpg"
         imageAlt="Spa and wellness treatments"
         reverse={false}
         bg="white"
@@ -68,7 +68,7 @@ export default async function AmenitiesPage() {
           { label: 'Options', value: 'Snorkeling, Kayaking, Hiking' },
           { label: 'Duration', value: 'Half-day and Full-day trips' },
         ]}
-        image="/image6.jpg"
+        image="/images/amenities/image6.jpg"
         imageAlt="Island tours and activities"
         reverse={true}
         bg="soft"
@@ -82,7 +82,7 @@ export default async function AmenitiesPage() {
           { label: 'Coverage', value: 'Entire resort property' },
           { label: 'Speed', value: 'High-speed Starlink internet' },
         ]}
-        image="/image4.jpg"
+        image="/images/amenities/image4.jpg"
         imageAlt="Fast Wi-Fi in the resort"
         reverse={false}
         bg="white"
@@ -96,7 +96,7 @@ export default async function AmenitiesPage() {
           { label: 'Route', value: 'Sihanoukville to Resort' },
           { label: 'Duration', value: 'Approx. 45 minutes' },
         ]}
-        image="/image5.jpg"
+        image="/images/amenities/image5.jpg"
         imageAlt="Speedboat transfer to Koh Rong"
         reverse={true}
         bg="soft"

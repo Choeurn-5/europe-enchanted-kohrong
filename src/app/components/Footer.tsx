@@ -113,7 +113,7 @@ export default function Footer() {
             <Link href="/" className="inline-flex items-center space-x-3.5 group">
               <div className="relative w-13 h-13 rounded-2xl overflow-hidden border border-[#00A3C4]/40 bg-white/5 p-1 shadow-md shadow-cyan-950/50 group-hover:border-[#00A3C4] transition-all">
                 <div className="relative w-full h-full rounded-xl overflow-hidden">
-                  <Image src="/logo.png" alt="Europe Enchanted Logo" fill className="object-cover" />
+                  <Image src="/images/common/logo.png" alt="Europe Enchanted Logo" fill className="object-cover" />
                 </div>
               </div>
               <div className="flex flex-col">

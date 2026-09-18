@@ -35,7 +35,7 @@ export async function generateMetadata({
     const bungalow = data.bungalow
     if (!bungalow) return { title: 'Bungalow Not Found' }
 
-    const imageUrl = bungalow.featuredImage?.node?.sourceUrl || '/images/resort-4.jpg'
+    const imageUrl = bungalow.featuredImage?.node?.sourceUrl || '/images/common/resort-4.jpg'
 
     return {
       title: `${bungalow.title} | Europe Enchanted Koh Rong`,

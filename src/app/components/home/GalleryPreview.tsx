@@ -6,14 +6,14 @@ import { AnimatePresence, motion, useReducedMotion, Variants } from 'framer-moti
 import { ChevronLeft, ChevronRight, Expand, X } from 'lucide-react';
 
 const galleryImages = [
-  { src: '/IMG_1393.jpg', alt: '', tall: true },
-  { src: '/IMG_1378.jpg', alt: '' },
-  { src: '/IMG_1360.jpg', alt: '' },
-  { src: '/IMG_1349.jpg', alt: '', tall: true },
-  { src: '/IMG_1328.jpg', alt: '' },
-  { src: '/IMG_1325.jpg', alt: '' },
-  { src: '/IMG_1381.jpg', alt: '' },
-  { src: '/IMG_1390.jpg', alt: '' },
+  { src: '/images/home/IMG_1393.jpg', alt: '', tall: true },
+  { src: '/images/home/IMG_1378.jpg', alt: '' },
+  { src: '/images/home/IMG_1360.jpg', alt: '' },
+  { src: '/images/home/IMG_1349.jpg', alt: '', tall: true },
+  { src: '/images/home/IMG_1328.jpg', alt: '' },
+  { src: '/images/home/IMG_1325.jpg', alt: '' },
+  { src: '/images/home/IMG_1381.jpg', alt: '' },
+  { src: '/images/home/IMG_1390.jpg', alt: '' },
 ];
 
 const container = {
